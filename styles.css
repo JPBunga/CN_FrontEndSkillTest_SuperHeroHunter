@@ -1,0 +1,217 @@
+
+/*Styles about main section*/
+
+*{
+    margin: 2px;
+    padding: 2px;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: height 0.3s;
+}
+
+
+.logo {
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    position: relative;
+    text-shadow: 2px 2px #000;
+    cursor: pointer;
+}
+
+.logo:before,
+.logo:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.logo:before {
+    left: 0;
+}
+
+.logo:after {
+    right: 0;
+}
+
+.logo:hover:before,
+.logo:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-btns {
+    display: flex;
+}
+
+.home-btn {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: royalblue;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20%;
+}
+
+.favorites-btn {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: pink;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20%;
+}
+
+.home-btn:hover {
+    background-color: lightblue;
+    color: #333;
+}
+
+.favorites-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#seach{
+    border-radius: 50%;
+}
+
+
+/*From here onwards - these are the styles of card section*/
+
+#app {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+h1 span {
+    margin: 0;
+}
+
+#j{
+    color: orange;
+}
+#b{
+    color: green;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px transparent black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center; */
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 20px;
+    background-color: ivory;
+    overflow: hidden;
+  }
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.card-img {
+    width: 98%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.card-img:hover {
+    transform: scale(1.1);
+}
+  
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  .card-description {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px;
+    margin-bottom: 30px;
+    height: 80px;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-actions a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .card-actions a:hover {
+    color: blue;
+  }
+  
+  .card-actions button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card-actions button:hover {
+    background-color: #fff;
+    color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
