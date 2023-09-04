@@ -21,6 +21,9 @@ About Favorites button:
 >> On clicking this Favorites button (present in the navbar), it'll navigate into Favorites page where we can see all the favorite heroes that the user has added earlier.
 >> These favorites won't be deleted or removed even the browser refreshed or anything but until the user deletes/removes them from the favorites list.
 
+Abuout Flexibility:
+>> I've made this project mainly based on Desktop first approach. so it'll have 3 cards initially on the normal desktop view as I've given the width of each card as 300px, on decreasing the size of the screen the no:of cards shown on the screen will also be decreased.
+
 
 Thank You !!
 JPBunga
